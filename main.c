@@ -42,7 +42,7 @@ void encriptar(){
 // Desencripta un texto y lo imprime en pantalla
 void desencriptar(){
   char texto[LARGO_MAXIMO], texto_original[LARGO_MAXIMO];
-  
+
   inicializaString(texto);
   inicializaString(texto_original);
   leeString(texto, "desencriptar");
