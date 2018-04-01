@@ -1,2 +1,2 @@
 main: encriptado.h tarea1.h
-	gcc -o tarea_1 main.c
+	cc -o tarea_1 tarea_1.c
