@@ -2,7 +2,8 @@
  * @author Andres Howard <aihoward@miuandes.cl>
  */
 
-#include "tarea1.h"
+#include "tarea_1.h"
+#include "encriptado.h"
 
 // Administra la ejecucion del programa
 int main(){
@@ -14,6 +15,7 @@ int main(){
 
   return 0;
 }
+
 
 /**************************
 * Métodos de encr/desencr *
