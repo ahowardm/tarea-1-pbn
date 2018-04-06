@@ -6,7 +6,7 @@
 * Métodos aulixiliares *
 ************************/
 
-#include "tarea1.h"
+#include "tarea_1.h"
 
 // Lee caracter para hacer el desplazamiento
 int inputCaracteresDesplazamiento(){
@@ -31,7 +31,7 @@ int inputCaracteresXor(){
 
 void cifradoPorDesplazamiento(char texto[], int posiciones){
   for (int i = 0; i < strlen(texto); i++)
-    texto[i] = texto[i] + posiciones;
+    texto[i] = (char)(texto[i] + posiciones);
 }
 
 void negacionDeBits(char texto[]){
@@ -45,7 +45,14 @@ void xor(char texto[], int caracter){
 }
 
 void invertirCaracteres(char texto[]){
-  return;
+  for (int i = 0; i < strlen(texto); i++){
+    if (texto[i] >= 'A' && texto[i] <= 'Z'){
+      texto[i] = (char)('Z' - (texto[i] - 'A'));
+    }
+    else if (texto[i] >= 'a' && texto[i] <= 'z'){
+      texto[i] = (char)('z' - (texto[i] - 'a'));
+    }
+  }
 }
 
 /************************
@@ -54,10 +61,17 @@ void invertirCaracteres(char texto[]){
 
 void noCifradoPorDesplazamiento(char texto[], int posiciones){
   for (int i = 0; i < strlen(texto); i++)
-    texto[i] = texto[i] - posiciones;
+    texto[i] = (char)(texto[i] - posiciones);
   //return texto;
 }
 
 void noInvertirCaracteres(char texto[]){
-  return;
+  for (int i = 0; i < strlen(texto); i++){
+    if (texto[i] >= 'A' && texto[i] <= 'Z'){
+      texto[i] = (char)('Z' - (texto[i] - 'A'));
+    }
+    else if (texto[i] >= 'a' && texto[i] <= 'z'){
+      texto[i] = (char)('z' - (texto[i] - 'a'));
+    }
+  }
 }

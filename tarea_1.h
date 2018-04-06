@@ -10,7 +10,8 @@
 
 #define LARGO_MAXIMO 100
 
-void leeString(char texto[], char funcion[]);
+void leeStringFuncion(char texto[], char funcion[]);
+void leeString(char texto[]);
 int seleccionaOpcion();
 void encriptar();
 void desencriptar();
